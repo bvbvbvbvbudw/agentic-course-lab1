@@ -8,3 +8,4 @@
 {"ts":"2026-10-04T11:38:10.100Z","tool":"Skill","input":{"name":"add-api-route"},"result":"ok","session":"claude-skill-eval","source":"claude-code"}
 {"ts":"2026-10-04T11:38:15.200Z","tool":"Skill","input":{"name":"add-api-route"},"result":"ok","session":"claude-skill-eval","source":"claude-code"}
 {"ts":"2026-10-04T11:38:20.300Z","tool":"Skill","input":{"name":"add-api-route"},"result":"ok","session":"claude-skill-eval","source":"claude-code"}
+{"ts":"2026-10-04T11:39:18Z","tool":"Bash","input":{"command":"echo TEST_KEY=*** >> .env"},"result":"denied","session":"claude-guard-test","source":"claude-code"}

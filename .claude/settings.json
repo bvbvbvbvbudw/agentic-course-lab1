@@ -1,4 +1,7 @@
 {
+  "permissions": {
+    "deny": ["Read(.env)", "Read(.env.local)", "Edit(.env)", "Edit(.env.local)"]
+  },
   "hooks": {
     "PostToolUse": [
       {
@@ -26,11 +29,11 @@
     ],
     "PreToolUse": [
       {
-        "matcher": "Write|Edit|MultiEdit",
+        "matcher": "Bash|PowerShell|Write|Edit|MultiEdit",
         "hooks": [
           {
             "type": "command",
-            "command": "jq -e '(.tool_input.file_path // \"\") | endswith(\".env\") or endswith(\".env.local\")' >/dev/null && jq -n '{hookSpecificOutput:{hookEventName:\"PreToolUse\",permissionDecision:\"deny\",permissionDecisionReason:\"Політика курсу: .env і .env.local редагує людина, не агент.\"}}' || exit 0",
+            "command": "bash \"${CLAUDE_PROJECT_DIR}/.claude/hooks/guard-env.sh\"",
             "timeout": 10
           }
         ]

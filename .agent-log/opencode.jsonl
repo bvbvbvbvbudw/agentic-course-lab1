@@ -3,3 +3,4 @@
 {"ts":"2026-10-04T11:38:25.100Z","tool":"skill","input":{"name":"add-api-route"},"result":"ok","session":"opencode-skill-eval","source":"opencode"}
 {"ts":"2026-10-04T11:38:30.200Z","tool":"skill","input":{"name":"add-api-route"},"result":"ok","session":"opencode-skill-eval","source":"opencode"}
 {"ts":"2026-10-04T11:38:35.300Z","tool":"skill","input":{"name":"add-api-route"},"result":"ok","session":"opencode-skill-eval","source":"opencode"}
+{"ts":"2026-10-04T11:39:18.666Z","tool":"Write","input":{"file_path":".env.local"},"result":"denied","session":"opencode-guard-test","source":"opencode"}
