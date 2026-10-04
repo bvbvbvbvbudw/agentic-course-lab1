@@ -5,13 +5,13 @@
 | Дата | 2026-10-04 |
 | Рядків до тесту | 26 |
 | Видалено | 11 з 26 рядків (42.3%) |
-| Гілки тесту | lab1/agents-md-40-full · lab1/agents-md-40-cut |
+| Гілки тесту | lab1/agents-md-40-full · lab1/agents-md-40-cut (коміт із видаленням: 5fa7ba4) |
 | Контрольна задача (запит дослівно) | «Як у цьому проєкті додати новий ендпоінт і які команди треба запустити для перевірки перед здачею?» |
 | Інструмент, модель, режим дозволів | Claude Code 2.1.289 / OpenCode 1.18.34, interactive |
 | Результат | не зламалося: агент правильно вказав App Router `app/api/<name>/route.ts`, необхідність Zod-схеми та обов'язковий ланцюжок `npm run typecheck && npm run lint && npm test && npm run build` |
 | Рішення | зберегти поточну версію: кожне речення містить атомарну директиву без зайвого шуму |
-| Журнал, повний файл | https://github.com/bvbvbvbvbudw/agentic-course-lab1/blob/main/AGENTS.md |
-| Журнал, урізаний файл | https://github.com/bvbvbvbvbudw/agentic-course-lab1/blob/lab1/agents-md-40-cut/AGENTS.md |
+| Журнал, повний файл | https://github.com/bvbvbvbvbudw/agentic-course-lab1/blob/6dc6f9e/AGENTS.md |
+| Журнал, урізаний файл | https://github.com/bvbvbvbvbudw/agentic-course-lab1/blob/5fa7ba4/AGENTS.md |
 
 ## Видалені рядки
 ```diff
