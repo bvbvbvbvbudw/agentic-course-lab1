@@ -37,6 +37,8 @@
     "next.config.ts",
     "vitest.config.ts",
     "playwright.config.ts",
+    "instrumentation.ts",
+    "instrumentation.node.ts",
     "app/**/*.ts",
     "app/**/*.tsx",
     "src/**/*.ts",
