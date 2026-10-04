@@ -36,6 +36,34 @@ AGENTS.md, навичка і промпти — мовою: українська
 | Які докази прийняли | Звіт валідатора `ALL JSONL LOGS VALID!`, наявність записів у `.agent-log/claude-code.jsonl` та `.agent-log/opencode.jsonl` |
 | Посилання | https://github.com/bvbvbvbvbudw/agentic-course-lab1/blob/main/.agent-log/claude-code.jsonl#L1 (ts 2026-10-04T11:34:56.171Z, tool Read) |
 
+## Сесія 3 · 2026-10-04
+
+| Поле | Значення |
+|---|---|
+| Інструмент і модель | Claude Code 2.1.289 · Claude 3.7 Sonnet |
+| Режим дозволів | plan mode (спочатку), потім acceptEdits |
+| Рівень довіри (L0–L5) | L1 · генерація та пропозиція diff з контролем контрактів |
+| Задача | Крок 03: Реалізація ендпоінта `GET /api/health` у гілці `lab1/health-claude` за контрактом `tests/health.test.ts` |
+| Що агент запропонував | Використати імпорт `@/src/health` та реалізувати GET без `force-dynamic` |
+| Що агент виконав | Створив `app/api/health/route.ts` після коригування плану |
+| Де і чому ви втрутилися | Спіймав 2 помилки: відсутність підтримки аліаса `@/` у Vitest (замінено на `../../../src/health`) та статичний рендеринг за замовчуванням (додано `export const dynamic = 'force-dynamic'`) |
+| Які докази прийняли | Успішні `npm run typecheck`, `npm test` (4 passed, 60 passed), `npm run build` (`ƒ /api/health` dynamic) |
+| Посилання | https://github.com/bvbvbvbvbudw/agentic-course-lab1/blob/48121e1/.agent-log/claude-code.jsonl#L3 (ts 2026-10-04T11:36:21.000Z, tool Write) · помилки №1 і №3 у `confident-errors.md` |
+
+## Сесія 4 · 2026-10-04
+
+| Поле | Значення |
+|---|---|
+| Інструмент і модель | OpenCode 1.18.34 · Ollama `qwen2.5-coder:14b` |
+| Режим дозволів | plan mode / interactive |
+| Рівень довіри (L0–L5) | L1 · підказка та виправлення плану |
+| Задача | Крок 03: Реалізація ендпоінта `GET /api/health` у гілці `lab1/health-opencode` |
+| Що агент запропонував | Створити файл `pages/api/health.ts` (архітектура Pages Router) |
+| Що агент виконав | Переробив план на App Router `app/api/health/route.ts` та реалізував маршрут |
+| Де і чому ви втрутилися | Відхилив план на етапі читання: у проєкті App Router, контрактний тест імпортує `../app/api/health/route` |
+| Які докази прийняли | `npm test` успішно пройшов усі 60 тестів, `npm run build` з динамічним ендпоінтом |
+| Посилання | https://github.com/bvbvbvbvbudw/agentic-course-lab1/blob/a1cdc63/.agent-log/opencode.jsonl#L3 (ts 2026-10-04T11:36:33.890Z, tool write) · помилка №2 у `confident-errors.md` |
+
 ## Інциденти
 | Дата | Що сталося | Що зроблено (коли відкликано ключ) | Рядок журналу / коміт |
 |---|---|---|---|
