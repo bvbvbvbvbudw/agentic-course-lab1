@@ -2,7 +2,7 @@ import { z } from 'zod';
 
 /** Контракт відповіді GET /api/health. Пишеться ДО того, як задачу отримує агент. */
 export const HealthResponse = z.object({
-  status: z.literal('ok'),
+  status: z.literal('broken'),
   timestamp: z.iso.datetime(),
 });
 
