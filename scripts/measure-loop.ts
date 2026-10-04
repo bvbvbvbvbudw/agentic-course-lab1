@@ -48,6 +48,27 @@ function pick(kind: string): { model: Model; spec: ModelSpec; form: string } {
       }),
     };
   }
+  if (kind === 'openrouter') {
+    const key = process.env.OPENROUTER_API_KEY;
+    const modelId = process.env.OPENROUTER_MODEL ?? 'meta-llama/llama-3.3-70b-instruct:free';
+    const spec: ModelSpec = {
+      id: modelId,
+      provider: 'openai',
+      inputPerMTok: 0,
+      outputPerMTok: 0,
+      pricingUrl: 'https://openrouter.ai/models',
+      retiresNotBefore: '2026-12-31',
+    };
+    return {
+      spec,
+      form: 'chat-completions',
+      model: chatCompletionsModel({
+        url: 'https://openrouter.ai/api/v1/chat/completions',
+        model: modelId,
+        ...(key ? { headers: { authorization: `Bearer ${key}` } } : {}),
+      }),
+    };
+  }
   const spec = MODELS.local;
   if (kind === 'ollama-messages') {
     return { spec, form: 'messages', model: messagesModel({ url: `${spec.baseUrl}/v1/messages`, model: spec.id }) };
@@ -55,7 +76,7 @@ function pick(kind: string): { model: Model; spec: ModelSpec; form: string } {
   if (kind === 'ollama-chat') {
     return { spec, form: 'chat-completions', model: chatCompletionsModel({ url: `${spec.baseUrl}/v1/chat/completions`, model: spec.id }) };
   }
-  throw new Error(`Невідомий провайдер «${kind}». Є: ollama-messages, ollama-chat, gemini`);
+  throw new Error(`Невідомий провайдер «${kind}». Є: ollama-messages, ollama-chat, gemini, openrouter`);
 }
 
 const [kind = 'ollama-messages', runsArg = '1'] = process.argv.slice(2);
