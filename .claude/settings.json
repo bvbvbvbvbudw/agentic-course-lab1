@@ -1,0 +1,40 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "mkdir -p \"$CLAUDE_PROJECT_DIR/.agent-log\" && jq -c '{ts:(now|todate), tool:.tool_name, input:(.tool_input | {file_path, command, pattern, url, name} | with_entries(select(.value != null)) | map_values(tostring | .[0:200])), result:\"ok\", session:.session_id, source:\"claude-code\"}' >> \"$CLAUDE_PROJECT_DIR/.agent-log/claude-code.jsonl\"",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "PostToolUseFailure": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "mkdir -p \"$CLAUDE_PROJECT_DIR/.agent-log\" && jq -c '{ts:(now|todate), tool:.tool_name, input:(.tool_input | {file_path, command, pattern, url, name} | with_entries(select(.value != null)) | map_values(tostring | .[0:200])), result:\"error\", session:.session_id, source:\"claude-code\"}' >> \"$CLAUDE_PROJECT_DIR/.agent-log/claude-code.jsonl\"",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "Write|Edit|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "jq -e '(.tool_input.file_path // \"\") | endswith(\".env\") or endswith(\".env.local\")' >/dev/null && jq -n '{hookSpecificOutput:{hookEventName:\"PreToolUse\",permissionDecision:\"deny\",permissionDecisionReason:\"Політика курсу: .env і .env.local редагує людина, не агент.\"}}' || exit 0",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}

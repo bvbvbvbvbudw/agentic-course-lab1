@@ -1,0 +1,2 @@
+{"ts":"2026-10-04T11:34:56.248Z","tool":"read","input":{"filePath":"package.json"},"result":"ok","session":"opencode-session-01","source":"opencode"}
+{"ts":"2026-10-04T11:34:56.286Z","tool":"bash","input":{"command":"npm test"},"result":"ok","session":"opencode-session-01","source":"opencode"}
