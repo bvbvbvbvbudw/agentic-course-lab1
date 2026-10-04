@@ -64,6 +64,20 @@ AGENTS.md, навичка і промпти — мовою: українська
 | Які докази прийняли | `npm test` успішно пройшов усі 60 тестів, `npm run build` з динамічним ендпоінтом |
 | Посилання | https://github.com/bvbvbvbvbudw/agentic-course-lab1/blob/a1cdc63/.agent-log/opencode.jsonl#L3 (ts 2026-10-04T11:36:33.890Z, tool write) · помилка №2 у `confident-errors.md` |
 
+## Сесія 5 · 2026-10-04
+
+| Поле | Значення |
+|---|---|
+| Інструмент і модель | Claude Code 2.1.289 / OpenCode 1.18.34 |
+| Режим дозволів | default / interactive |
+| Рівень довіри (L0–L5) | L1 · створення та валідація навички (Agent Skill) |
+| Задача | Крок 04: Створення навички `add-api-route` за специфікацією agentskills.io, синхронізація та тестування спрацювання |
+| Що агент запропонував | Написати `.claude/skills/add-api-route/SKILL.md`, скрипт перевірки `scripts/check-route.mjs` та провести тест із 6 запитів |
+| Що агент виконав | Створено навичку, валідовано скрипт вручну на `health` (0) та `non-existent` (1), синхронізовано в `.agents/skills/add-api-route/` через `npm run sync-skills`, проведено eval |
+| Де і чому ви втрутилися | Перевірив frontmatter на відповідність специфікації agentskills.io та валідацію `npm run sync-skills -- --check` |
+| Які докази прийняли | Звіт `docs/lab1/skill-trigger.md` (12/12 успішних спрацювань), код виходу 0 команди `npm run sync-skills -- --check` |
+| Посилання | https://github.com/bvbvbvbvbudw/agentic-course-lab1/blob/main/.claude/skills/add-api-route/SKILL.md |
+
 ## Інциденти
 | Дата | Що сталося | Що зроблено (коли відкликано ключ) | Рядок журналу / коміт |
 |---|---|---|---|
