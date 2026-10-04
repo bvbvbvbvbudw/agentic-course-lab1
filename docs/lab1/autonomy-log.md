@@ -78,7 +78,22 @@ AGENTS.md, навичка і промпти — мовою: українська
 | Які докази прийняли | Звіт `docs/lab1/skill-trigger.md` (12/12 успішних спрацювань), код виходу 0 команди `npm run sync-skills -- --check` |
 | Посилання | https://github.com/bvbvbvbvbudw/agentic-course-lab1/blob/main/.claude/skills/add-api-route/SKILL.md |
 
+## Сесія 6 · 2026-10-04
+
+| Поле | Значення |
+|---|---|
+| Інструмент і модель | Власний агентний цикл (`src/agent/agent-loop.ts`) · Ollama `qwen2.5-coder:14b` |
+| Режим дозволів | L1 · «підказка/пропозиція» (лише інструменти читання `list_files`, `read_file`) |
+| Рівень довіри (L0–L5) | L1 · пропозиція структурованого коду за схемою |
+| Задача | Крок 08: Розв'язання задачі створення ендпоінта `/api/health` за контрактом `tests/health.test.ts` у гілці `lab1/health-loop` |
+| Що агент запропонував | Згенерувати `app/api/health/route.ts` з динамічним експортом `export const dynamic = 'force-dynamic'`, імпортом `HealthResponse` з `../../../src/health` та поверненням `NextResponse.json` |
+| Що агент виконав | Виконав інструменти читання `list_files .`, `read_file src/health.ts`, `read_file tests/health.test.ts`, сформував валідний JSON за `ProposalSchema` |
+| Де і чому ви втрутилися | Цикл має лише інструменти читання. Людина вручну перевірила запропонований код, застосувала його у гілці `lab1/health-loop` від базового коміту `51e3e52`, запустила `npm test tests/health.test.ts` і `npm run build` |
+| Які докази прийняли | Успішне проходження тесту контракту (3/3 passed), успішний білд з `ƒ /api/health`, 10/10 валідних структурованих виходів у `docs/lab1/comparison.md` |
+| Посилання | https://github.com/bvbvbvbvbudw/agentic-course-lab1/blob/77df96e/app/api/health/route.ts · .agent-log/agent-loop.jsonl#L1 |
+
 ## Інциденти
 | Дата | Що сталося | Що зроблено (коли відкликано ключ) | Рядок журналу / коміт |
 |---|---|---|---|
 | | | | |
+
