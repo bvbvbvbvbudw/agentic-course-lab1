@@ -1,0 +1,21 @@
+{"ts":"2026-11-08T11:58:35.764Z","source":"agent:claude-code","tool":"search_corpus","args":{"query":"як працює Circuit Breaker","topK":3},"result":"ok"}
+{"ts":"2026-11-08T11:58:35.766Z","source":"app:next-backend","tool":"fetch_chunk","args":{"id":"doc-01#0001"},"result":"ok"}
+{"ts":"2026-11-08T11:58:35.766Z","source":"agent:claude-code","tool":"fetch_chunk","args":{"id":"doc-99#0001"},"result":"refused"}
+{"ts":"2026-11-08T12:06:15.032Z","source":"agent:claude-code","tool":"search_corpus","args":{"query":"як працює Circuit Breaker","topK":3},"result":"ok"}
+{"ts":"2026-11-08T12:06:15.034Z","source":"app:next-backend","tool":"fetch_chunk","args":{"id":"doc-01#0001"},"result":"ok"}
+{"ts":"2026-11-08T12:06:15.034Z","source":"agent:claude-code","tool":"fetch_chunk","args":{"id":"doc-99#0001"},"result":"refused"}
+{"ts":"2026-11-08T12:06:15.425Z","source":"agent:claude-code","tool":"search_corpus","args":{"query":"як працює Circuit Breaker","topK":3},"result":"ok"}
+{"ts":"2026-11-08T12:06:15.426Z","source":"app:next-backend","tool":"fetch_chunk","args":{"id":"doc-01#0001"},"result":"ok"}
+{"ts":"2026-11-08T12:06:15.426Z","source":"agent:claude-code","tool":"fetch_chunk","args":{"id":"doc-99#0001"},"result":"refused"}
+{"ts":"2026-11-08T12:06:15.823Z","source":"agent:claude-code","tool":"search_corpus","args":{"query":"як працює Circuit Breaker","topK":3},"result":"ok"}
+{"ts":"2026-11-08T12:06:15.824Z","source":"app:next-backend","tool":"fetch_chunk","args":{"id":"doc-01#0001"},"result":"ok"}
+{"ts":"2026-11-08T12:06:15.824Z","source":"agent:claude-code","tool":"fetch_chunk","args":{"id":"doc-99#0001"},"result":"refused"}
+{"ts":"2026-11-08T12:06:18.387Z","source":"agent:claude-code","tool":"search_corpus","args":{"query":"як працює Circuit Breaker","topK":3},"result":"ok"}
+{"ts":"2026-11-08T12:06:18.389Z","source":"app:next-backend","tool":"fetch_chunk","args":{"id":"doc-01#0001"},"result":"ok"}
+{"ts":"2026-11-08T12:06:18.389Z","source":"agent:claude-code","tool":"fetch_chunk","args":{"id":"doc-99#0001"},"result":"refused"}
+{"ts":"2026-11-08T12:06:18.785Z","source":"agent:claude-code","tool":"search_corpus","args":{"query":"як працює Circuit Breaker","topK":3},"result":"ok"}
+{"ts":"2026-11-08T12:06:18.787Z","source":"app:next-backend","tool":"fetch_chunk","args":{"id":"doc-01#0001"},"result":"ok"}
+{"ts":"2026-11-08T12:06:18.787Z","source":"agent:claude-code","tool":"fetch_chunk","args":{"id":"doc-99#0001"},"result":"refused"}
+{"ts":"2026-11-08T12:06:19.181Z","source":"agent:claude-code","tool":"search_corpus","args":{"query":"як працює Circuit Breaker","topK":3},"result":"ok"}
+{"ts":"2026-11-08T12:06:19.183Z","source":"app:next-backend","tool":"fetch_chunk","args":{"id":"doc-01#0001"},"result":"ok"}
+{"ts":"2026-11-08T12:06:19.183Z","source":"agent:claude-code","tool":"fetch_chunk","args":{"id":"doc-99#0001"},"result":"refused"}
