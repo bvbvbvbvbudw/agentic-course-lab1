@@ -1,0 +1,7 @@
+diff --git a/docs/lab2/golden/queries.jsonl b/docs/lab2/golden/queries.jsonl
+--- a/docs/lab2/golden/queries.jsonl
++++ b/docs/lab2/golden/queries.jsonl
+@@ -1,5 +1,6 @@
+ {"id":"q-01","query":"Які чотири обов'язкові детерміновані брами якості перевіряються перед злиттям коду?","expected":["types (TypeScript)", "lint (ESLint)", "tests (Vitest)", "build (Next.js)"],"must_cite":["doc-03"],"tags":["easy"]}
++{"id":"q-02","query":"Чому верифікатор коду має працювати на іншій моделі, ніж виконавець?","expected":["Модель-виконавець схильна до системного підтвердження власних припущень (confirmation bias)"],"must_cite":["doc-04"],"tags":["easy"]}
+
