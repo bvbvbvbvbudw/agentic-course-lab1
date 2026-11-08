@@ -1,0 +1,32 @@
+{
+  "timestamp": "2026-11-08T11:57:14.584Z",
+  "runs": [
+    {
+      "width": 1,
+      "totalTasks": 20,
+      "wallMs": 4,
+      "sumBranchMs": 4,
+      "concurrencySpeedup": 1,
+      "totalTokensEstimated": 22827,
+      "costUsdEstimated": 0.003424
+    },
+    {
+      "width": 2,
+      "totalTasks": 20,
+      "wallMs": 3,
+      "sumBranchMs": 4,
+      "concurrencySpeedup": 1.33,
+      "totalTokensEstimated": 22827,
+      "costUsdEstimated": 0.003424
+    },
+    {
+      "width": 4,
+      "totalTasks": 20,
+      "wallMs": 2,
+      "sumBranchMs": 8,
+      "concurrencySpeedup": 4,
+      "totalTokensEstimated": 22827,
+      "costUsdEstimated": 0.003424
+    }
+  ]
+}
