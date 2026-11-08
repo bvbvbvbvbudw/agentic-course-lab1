@@ -1,0 +1,17 @@
+{
+  "taskId": "t-04",
+  "runId": "t-04-1794139450384",
+  "startedAt": "2026-11-08T12:04:10.384Z",
+  "completedAt": "2026-11-08T12:04:10.911Z",
+  "durationMs": 508,
+  "turns": 1,
+  "costUsd": 0.0012,
+  "exitStatus": "success",
+  "acceptancePassed": true,
+  "commandsExecuted": [
+    {
+      "command": "npx vitest run tests/index.test.ts",
+      "exitCode": 0
+    }
+  ]
+}

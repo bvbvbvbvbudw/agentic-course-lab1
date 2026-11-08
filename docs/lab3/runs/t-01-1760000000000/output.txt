@@ -1,0 +1,28 @@
+=== TASK RUN t-01-1794139447522 ===
+Input: Додати перевірку валідності JSON-файлів у скрипт doctor.ts
+
+[CMD SUCCESS] npm run doctor
+
+> agentic-course-starter@0.1.0 doctor
+> tsx scripts/doctor.ts
+
+Перевірка середовища курсу «Агентна інженерія»
+
+[ OK ]  Node.js (обов’язково) — версія 24.4.0 (потрібно >= 22)
+[ OK ]  git (обов’язково) — /usr/bin/git
+[ OK ]  Менеджер пакетів — npm знайдено
+[ OK ]  Агенти кодування — знайдено: claude, opencode
+[ OK ]  ollama — /opt/homebrew/bin/ollama; моделей: 1
+[ OK ]  docker — /usr/local/bin/docker
+[ OK ]  Платформа — darwin
+[ FIX ] .env.local — ключів: 9, заповнено: 2; бракує: LANGFUSE_BASE_URL, LANGFUSE_PUBLIC_KEY, LANGFUSE_SECRET_KEY, OPENROUTER_API_KEY, OPENROUTER_MODEL
+[ OK ]  Залежності — node_modules на місці
+[ OK ]  Вільне місце — 251.7 ГБ (потрібно >= 5.0 ГБ)
+
+Підсумок: 9 OK, 1 FIX, 0 пропущено.
+
+Що зробити:
+  - .env.local: Додайте до `.env.local` ключі з `.env.example`: LANGFUSE_BASE_URL, LANGFUSE_PUBLIC_KEY, LANGFUSE_SECRET_KEY, OPENROUTER_API_KEY, OPENROUTER_MODEL.
+
+Обов’язкові умови виконано — можна працювати.
+

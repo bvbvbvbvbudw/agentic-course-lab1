@@ -1,0 +1,15 @@
+=== TASK RUN t-05-1794139450912 ===
+Input: Запустити тести гібридного пошуку, BM25 та цитування
+
+[CMD SUCCESS] npx vitest run tests/retrieval.test.ts
+
+ RUN  v5.0.0 /Users/bvbvbvbvbudw/Documents/projects/univ/01-lab
+
+ ✓ tests/retrieval.test.ts (5 tests) 5ms
+
+ Test Files  1 passed (1)
+      Tests  5 passed (5)
+   Start at  13:04:11
+   Duration  122ms (transform 66%, import 19%, tests 11%, worker 4%)
+
+

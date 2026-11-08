@@ -1,0 +1,17 @@
+{
+  "taskId": "t-01",
+  "runId": "t-01-1794139447522",
+  "startedAt": "2026-11-08T12:04:07.522Z",
+  "completedAt": "2026-11-08T12:04:07.858Z",
+  "durationMs": 317,
+  "turns": 1,
+  "costUsd": 0.0012,
+  "exitStatus": "success",
+  "acceptancePassed": true,
+  "commandsExecuted": [
+    {
+      "command": "npm run doctor",
+      "exitCode": 0
+    }
+  ]
+}

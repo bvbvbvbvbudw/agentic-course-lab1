@@ -1,0 +1,17 @@
+{
+  "taskId": "t-05",
+  "runId": "t-05-1794139450912",
+  "startedAt": "2026-11-08T12:04:10.912Z",
+  "completedAt": "2026-11-08T12:04:11.458Z",
+  "durationMs": 526,
+  "turns": 1,
+  "costUsd": 0.0012,
+  "exitStatus": "success",
+  "acceptancePassed": true,
+  "commandsExecuted": [
+    {
+      "command": "npx vitest run tests/retrieval.test.ts",
+      "exitCode": 0
+    }
+  ]
+}

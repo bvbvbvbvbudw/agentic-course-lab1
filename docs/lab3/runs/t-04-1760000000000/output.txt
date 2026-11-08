@@ -1,0 +1,15 @@
+=== TASK RUN t-04-1794139450384 ===
+Input: Запустити модульні тести цілісності індексу корпусних документів
+
+[CMD SUCCESS] npx vitest run tests/index.test.ts
+
+ RUN  v5.0.0 /Users/bvbvbvbvbudw/Documents/projects/univ/01-lab
+
+ ✓ tests/index.test.ts (2 tests) 9ms
+
+ Test Files  1 passed (1)
+      Tests  2 passed (2)
+   Start at  13:04:10
+   Duration  106ms (transform 45%, tests 29%, import 20%, worker 6%)
+
+

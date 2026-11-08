@@ -1,0 +1,12 @@
+{"ts":"2026-11-08T12:01:08.291Z","layer":"harness:circuit-breaker","state":"OPEN","failures":1,"reason":"Досягнуто ліміт 1 послідовних збоїв: Перший збій"}
+{"ts":"2026-11-08T12:01:08.292Z","layer":"harness","reason":"circuit_breaker_open","details":"Circuit Breaker перебуває у стані OPEN. Запуск задач зупинено."}
+{"ts":"2026-11-08T12:04:02.800Z","layer":"harness:circuit-breaker","state":"OPEN","failures":1,"reason":"Досягнуто ліміт 1 послідовних збоїв: Перший збій"}
+{"ts":"2026-11-08T12:04:02.801Z","layer":"harness","reason":"circuit_breaker_open","details":"Circuit Breaker перебуває у стані OPEN. Запуск задач зупинено."}
+{"ts":"2026-11-08T12:06:13.936Z","layer":"harness:circuit-breaker","state":"OPEN","failures":2,"reason":"Досягнуто ліміт 2 послідовних збоїв: Тестове падіння 2"}
+{"ts":"2026-11-08T12:06:14.280Z","layer":"harness:circuit-breaker","state":"OPEN","failures":2,"reason":"Досягнуто ліміт 2 послідовних збоїв: Тестове падіння 2"}
+{"ts":"2026-11-08T12:06:14.626Z","layer":"harness:circuit-breaker","state":"OPEN","failures":2,"reason":"Досягнуто ліміт 2 послідовних збоїв: Тестове падіння 2"}
+{"ts":"2026-11-08T12:06:22.731Z","layer":"task","reason":"max_turns","details":"Перевищено ліміт ходів задачі: 1 >= 1"}
+{"ts":"2026-11-08T12:06:23.119Z","layer":"task","reason":"max_turns","details":"Перевищено ліміт ходів задачі: 1 >= 1"}
+{"ts":"2026-11-08T12:06:23.467Z","layer":"task","reason":"max_turns","details":"Перевищено ліміт ходів задачі: 1 >= 1"}
+{"ts":"2026-11-08T12:10:49.049Z","layer":"harness:circuit-breaker","state":"OPEN","failures":1,"reason":"Досягнуто ліміт 1 послідовних збоїв: Перший збій"}
+{"ts":"2026-11-08T12:10:49.050Z","layer":"harness","reason":"circuit_breaker_open","details":"Circuit Breaker перебуває у стані OPEN. Запуск задач зупинено."}

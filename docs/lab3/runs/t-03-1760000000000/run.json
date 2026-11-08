@@ -1,0 +1,17 @@
+{
+  "taskId": "t-03",
+  "runId": "t-03-1794139448893",
+  "startedAt": "2026-11-08T12:04:08.893Z",
+  "completedAt": "2026-11-08T12:04:10.383Z",
+  "durationMs": 1473,
+  "turns": 1,
+  "costUsd": 0.0012,
+  "exitStatus": "success",
+  "acceptancePassed": true,
+  "commandsExecuted": [
+    {
+      "command": "npm run lint",
+      "exitCode": 0
+    }
+  ]
+}

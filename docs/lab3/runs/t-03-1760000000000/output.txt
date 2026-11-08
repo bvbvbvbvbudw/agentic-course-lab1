@@ -1,0 +1,9 @@
+=== TASK RUN t-03-1794139448893 ===
+Input: Запустити лінтер кодової бази без помилок
+
+[CMD SUCCESS] npm run lint
+
+> agentic-course-starter@0.1.0 lint
+> eslint .
+
+

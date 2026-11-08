@@ -1,0 +1,9 @@
+=== TASK RUN t-02-1794139447859 ===
+Input: Перевірити типи проєкту за допомогою tsc
+
+[CMD SUCCESS] npm run typecheck
+
+> agentic-course-starter@0.1.0 typecheck
+> tsc --noEmit
+
+
