@@ -1,0 +1,33 @@
+{
+  "updatedAt": "2026-11-08T12:06:26.240Z",
+  "k": 3,
+  "stats": [
+    {
+      "bucket": "regression",
+      "tasksCount": 10,
+      "passAtK": 1,
+      "passCaretK": 1,
+      "medianDurationMs": 540,
+      "totalTokens": 7317,
+      "totalCostUsd": 0.0011
+    },
+    {
+      "bucket": "new",
+      "tasksCount": 6,
+      "passAtK": 0.5,
+      "passCaretK": 0.5,
+      "medianDurationMs": 338,
+      "totalTokens": 4407,
+      "totalCostUsd": 0.00066
+    },
+    {
+      "bucket": "edge",
+      "tasksCount": 8,
+      "passAtK": 0.625,
+      "passCaretK": 0.625,
+      "medianDurationMs": 342,
+      "totalTokens": 5889,
+      "totalCostUsd": 0.00089
+    }
+  ]
+}

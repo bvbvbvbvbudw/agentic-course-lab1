@@ -1,0 +1,15 @@
+{
+  "traceId": "tr-timeout-02",
+  "rootSpan": {
+    "name": "invoke_agent task_runner",
+    "attributes": {
+      "gen_ai.operation.name": "invoke_agent",
+      "task.id": "t-22",
+      "exit_status": "timeout",
+      "error.type": "TaskTimeoutError",
+      "duration_ms": 30012
+    },
+    "children": []
+  }
+}
+

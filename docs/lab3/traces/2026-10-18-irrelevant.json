@@ -1,0 +1,24 @@
+{
+  "traceId": "tr-irrelevant-01",
+  "rootSpan": {
+    "name": "invoke_agent task_runner",
+    "attributes": {
+      "gen_ai.operation.name": "invoke_agent",
+      "gen_ai.agent.name": "harness_executor",
+      "task.id": "t-17",
+      "task.input": "термодинаміка квантового супу"
+    },
+    "children": [
+      {
+        "name": "execute_tool search_corpus",
+        "attributes": {
+          "gen_ai.tool.name": "search_corpus",
+          "tool.args": "{\"query\":\"термодинаміка квантового супу\"}",
+          "result": "refused",
+          "refusal.reason": "У наданій колекції документів немає відомостей для відповіді на це запитання"
+        }
+      }
+    ]
+  }
+}
+
